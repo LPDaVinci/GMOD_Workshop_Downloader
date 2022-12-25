@@ -1,38 +1,35 @@
-	--[[-------------------------------------------------------------------
-		Workshop Downloader:
-			Needed for the thing to work!
-				Powered by
-  ____                _        _    ____                               
- / ___|_ __ _   _ ___| |_ __ _| |  / ___| __ _ _ __ ___   ___ _ __ ___ 
-| |   | '__| | | / __| __/ _` | | | |  _ / _` | '_ ` _ \ / _ \ '__/ __|
-| |___| |  | |_| \__ \ || (_| | | | |_| | (_| | | | | | |  __/ |  \__ \
- \____|_|   \__, |___/\__\__,_|_|  \____|\__,_|_| |_| |_|\___|_|  |___/
-            |___/                                                      
-
-	-------------------------------------------------------------------]]--[[
-								  
-		Coded by LPDaVinci
-		
-	---------------------------------------------------------------------]]--
-if SERVER then
-
-	include( "wsdl/sh_wsdl_config.lua" )
-	include( "wsdl/sh_wsdl_fastdl.lua" )
-	include( "wsdl/sh_wsdl_functions.lua" )
-	include( "wsdl/sv_wsdl_hooks.lua" )
+--[[-------------------------------------------------------------------
+	Workshop Downloader System:
+		Needed for the thing to work!
+			Powered by
+   _____ ______ _   _ _______ _____  _____ _______   __     _   _ ______ _________          ______  _____  _  __
+  / ____|  ____| \ | |__   __|  __ \|_   _/ ____\ \ / /    | \ | |  ____|__   __\ \        / / __ \|  __ \| |/ /
+ | |    | |__  |  \| |  | |  | |__) | | || |     \ V /_____|  \| | |__     | |   \ \  /\  / / |  | | |__) | ' / 
+ | |    |  __| | . ` |  | |  |  _  /  | || |      > <______| . ` |  __|    | |    \ \/  \/ /| |  | |  _  /|  <  
+ | |____| |____| |\  |  | |  | | \ \ _| || |____ / . \     | |\  | |____   | |     \  /\  / | |__| | | \ \| . \ 
+  \_____|______|_| \_|  |_|  |_|  \_\_____\_____/_/ \_\    |_| \_|______|  |_|      \/  \/   \____/|_|  \_\_|\_\
+                                                                                                                
+                                                                                                                
+-------------------------------------------------------------------]]--[[
+							  
+	Edited by LPDaVinci
 	
-	include( "wsdl/sv_database.lua" )
-	AddCSLuaFile( "wsdl/sh_wsdl_config.lua" )
-	AddCSLuaFile( "wsdl/sh_wsdl_functions.lua" )
+---------------------------------------------------------------------]]--
+
+if SERVER then
 	AddCSLuaFile( "wsdl/cl_wsdl_panel.lua" )
-
+	AddCSLuaFile( "wsdl/sh_wsdl_config.lua" )
+	AddCSLuaFile( "wsdl/sh_wsdl_fastdl.lua" )
+	AddCSLuaFile( "wsdl/sh_wsdl_functions.lua" )
+	AddCSLuaFile( "wsdl/sh_wsdl_hooks.lua" )
+	include( "wsdl/sh_wsdl_config.lua" )
+	include( "wsdl/sh_wsdl_functions.lua" )
+	include( "wsdl/sh_wsdl_hooks.lua" )
+	include( "wsdl/sv_database.lua" )
 else
-
 	include( "wsdl/cl_wsdl_panel.lua" )
 	include( "wsdl/sh_wsdl_config.lua" )
 	include( "wsdl/sh_wsdl_fastdl.lua" )
 	include( "wsdl/sh_wsdl_functions.lua" )
-	
 end
-
 
